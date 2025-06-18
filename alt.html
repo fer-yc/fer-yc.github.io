@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FER Y.C. – Blacksmith Craftsmanship from Morocco</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 15px 10px;
+            padding: 15px 30px;
+            font-size: 1.1em;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .btn-orange { background: #e67e22; color: #fff; }
+        .btn-blue { background: #2980b9; color: #fff; }
+        .btn:hover { opacity: 0.9; }
+
+        .flex-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .card img {
+            width: 60px;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            .flex-row { flex-direction: column; align-items: center; }
+            #home { padding: 100px 20px; }
+            #home .overlay { padding: 40px; }
+        }
+    </style>
+</head>
+
+
+    <body style="margin:0; padding:0; position:relative; background:transparent;">
+
+        <div style="
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(to bottom right, rgba(20, 20, 20, 0.85), rgba(30, 30, 30, 0.6));
+            z-index: -1;
+            pointer-events: none;">
+        </div>
+    
+        <header style="position: relative; background: linear-gradient(135deg, #111 30%, #222 100%); color: #fff; padding: 20px 20px; font-family: 'Playfair Display', serif; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4); z-index: 10;
+        display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;"> <div style="flex-grow: 1; text-align: left;"> <h1 style="font-size: 3.2em; margin: 0; letter-spacing: 2px;">FER Y.C.</h1>
+<p style="font-size: 1.2em; color: #bbb; margin-top: 5px; font-family: 'Roboto', sans-serif;">Blacksmith Craftsmanship from the Heart of Morocco</p>
+
+<nav style="margin-top: 20px;"> <ul style="list-style: none; display: flex; justify-content: center; gap: 40px; padding: 0; margin: 0; flex-wrap: wrap; font-family: 'Roboto', sans-serif;"> <li style="animation: fadeInUp 1s ease-out 0.2s forwards; opacity: 0;"><a href="#home" class="nav-link">🏠 Home</a></li>
+   <li style="animation: fadeInUp 1s ease-out 0.4s forwards; opacity: 0;"><a href="#about" class="nav-link">📜 About</a></li>
+   <li style="animation: fadeInUp 1s ease-out 0.6s forwards; opacity: 0;"><a href="#services" class="nav-link">🛠️ Services</a></li>
+   <li style="animation: fadeInUp 1s ease-out 0.8s forwards; opacity: 0;"><a href="#gallery" class="nav-link">🖼️ Gallery</a></li>
+   <li style="animation: fadeInUp 1s ease-out 1s forwards; opacity: 0;"><a href="#contact" class="nav-link">✉️ Contact</a></li>
+ </ul>
+</nav>
+</div>
+
+<div style="flex-shrink: 0; margin-left: 20px;"> <img src="FerYCkp2-removebg-preview.png" alt="FER Y.C. Logo" style="height: 200px; width: auto; display: block;"> </div>
+
+<style>
+/* ... existing styles (keep all current header and nav link styles) ... */
+
+/* Add or modify responsive styles for header */
+@media (max-width: 768px) {
+ header {
+   flex-direction: column; /* Stack items vertically on smaller screens */
+   align-items: center; /* Center items when stacked */
+   text-align: center; /* Center text */
+   padding: 20px; /* Adjust padding */
+ }
+ header > div { /* Target both title/nav and logo containers */
+     width: 100%; /* Make them take full width */
+     text-align: center; /* Center content */
+ }
+ header nav ul {
+     justify-content: center !important; /* Center navigation items */
+ }
+ header img {
+     margin-top: 20px; /* Add space above logo when stacked */
+     margin-left: 0 !important; /* Remove left margin on small screens */
+ }
+}
+</style>
+
+          
+  
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap');
+  
+      .nav-link {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 500;
+        font-size: 1.1em;
+        padding: 8px 16px;
+        position: relative;
+        transition: color 0.3s ease;
+      }
+  
+      .nav-link::after {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0%;
+        height: 2px;
+        background-color: #e67e22;
+        transition: width 0.3s ease;
+      }
+  
+      .nav-link:hover {
+        color: #e67e22;
+      }
+  
+      .nav-link:hover::after {
+        width: 100%;
+      }
+  
+      @keyframes fadeInDown {
+        0% { opacity: 0; transform: translateY(-30px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+  
+      @keyframes fadeInUp {
+        0% { opacity: 0; transform: translateY(20px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+  
+      @media (max-width: 768px) {
+        header h1 {
+          font-size: 2.3em;
+        }
+  
+        header p {
+          font-size: 1em;
+        }
+  
+        nav ul {
+          flex-direction: column;
+          gap: 20px;
+          padding-top: 20px;
+        }
+  
+        .nav-link {
+          font-size: 1.1em;
+          padding: 6px 12px;
+        }
+      }
+  
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation: none !important;
+          transition: none !important;
+        }
+      }
+    </style> 
+  </header>
+  
+    <section id="home" style="position: relative; min-height: 100vh; display: flex; align-items: center; justify-content: center; overflow: hidden; font-family: 'Roboto', sans-serif;">
+
+    <video autoplay muted loop playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;">
+      <source src="https://cdn.coverr.co/videos/coverr-metal-worker-with-an-angle-grinder-4362/1080p.mp4" type="video/mp4">
+    </video>
+  
+    <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom right, rgba(20, 20, 20, 0.85), rgba(30, 30, 30, 0.6)); z-index: 2;"></div>
+  
+    <div class="hero-content" style="position: relative; z-index: 3; text-align: center; color: #fff; max-width: 900px; padding: 40px; backdrop-filter: blur(10px); border-radius: 16px; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 10px 30px rgba(0,0,0,0.5); animation: fadeIn 1.5s ease-out;">
+  
+      <img src="iron.png" alt="Anvil Icon" style="width: 80px; margin-bottom: 20px; opacity: 0.85;">
+  
+      <h2 style="font-size: 3em; margin-bottom: 20px; letter-spacing: 1px; font-weight: 700;">Timeless Metal Art</h2>
+  
+      <p style="font-size: 1.3em; margin-bottom: 30px; line-height: 1.6; max-width: 720px; margin-left: auto; margin-right: auto;">
+        At <strong>FER Y.C.</strong>, we forge more than metal — we shape identity. From intricate gates to grand iron doors and one-of-a-kind sculptures, our handcrafted creations fuse heritage with modernity.
+      </p>
+  
+      <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+        <a href="#services" class="btn-home btn-orange-home">🔨 Explore Our Work</a>
+        <a href="#contact" class="btn-home btn-blue-home">📞 Get a Free Quote</a>
+      </div>
+  
+      <div style="margin-top: 50px;">
+        <p style="font-size: 1em; color: #ccc; max-width: 600px; margin: auto;">
+          Each piece tells a story — forged by fire, shaped by passion, and built to last generations.
+        </p>
+      </div>
+    </div>
+  
+    <div style="position: absolute; bottom: 20px; width: 100%; z-index: 3; text-align: center; color: #eee; font-size: 0.95em;">
+      <p>📍 Based in Morocco | 📐 Custom Projects | 🛠️ Family-Owned Workshop</p>
+    </div>
+  
+    <style>
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(30px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+  
+      .btn-home {
+        text-decoration: none;
+        padding: 14px 30px;
+        border-radius: 30px;
+        font-weight: 600;
+        font-size: 1em;
+        transition: all 0.3s ease;
+        display: inline-block;
+        border: 2px solid transparent;
+      }
+  
+      .btn-orange-home {
+        background-color: #e67e22;
+        color: #fff;
+        border-color: #e67e22;
+      }
+  
+      .btn-orange-home:hover {
+        background: transparent;
+        color: #e67e22;
+      }
+  
+      .btn-blue-home {
+        background-color: #2980b9;
+        color: #fff;
+        border-color: #2980b9;
+      }
+  
+      .btn-blue-home:hover {
+        background: transparent;
+        color: #2980b9;
+      }
+  
+      @media (max-width: 768px) {
+        .hero-content {
+          padding: 20px;
+        }
+  
+        .hero-content h2 {
+          font-size: 2em;
+        }
+  
+        .hero-content p {
+          font-size: 1.1em;
+        }
+  
+        .btn-home {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    </style>
+  </section>
+  
+
+    <div class="container">
+        
+        
+        <section id="about" >
+            <div class="overlay" style="color: #fff; text-shadow: 0 1px 3px rgba(0,0,0,0.7); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                <h2 style="font-size: 3em; margin-bottom: 25px; letter-spacing: 0.05em; font-weight: 700;">About FER Y.C.</h2>
+                <p style="max-width: 700px; margin: auto 0 40px; font-size: 1.3em; line-height: 1.7;">
+                  Master Blacksmiths Forging Tradition into Contemporary Elegance
+                </p>
+                <div class="about-grid" style="display: grid; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap: 35px;">
+                  <div class="about-card" style="background: rgba(30,30,30,0.6); padding: 30px; border-radius: 15px; backdrop-filter: blur(12px); box-shadow: 0 8px 20px rgba(0,0,0,0.4); transition: transform 0.3s ease;">
+                    <h3 style="font-size: 1.6em; margin-bottom: 15px; color: #f39c12; font-weight: 700;">Who We Are</h3>
+                    <p style="font-size: 1.1em; line-height: 1.75; color: #eee;">
+                      We are four master artisans from Morocco, uniting decades of blacksmithing experience with a shared commitment to quality and cultural pride.
+                    </p>
+                  </div>
+                  <div class="about-card" style="background: rgba(30,30,30,0.6); padding: 30px; border-radius: 15px; backdrop-filter: blur(12px); box-shadow: 0 8px 20px rgba(0,0,0,0.4); transition: transform 0.3s ease;">
+                    <h3 style="font-size: 1.6em; margin-bottom: 15px; color: #f39c12; font-weight: 700;">Our Philosophy</h3>
+                    <p style="font-size: 1.1em; line-height: 1.75; color: #eee;">
+                      Every gate, railing, or sculpture is an homage to Moroccan heritage — made by hand, never rushed, never compromised.
+                    </p>
+                  </div>
+                  <div class="about-card" style="background: rgba(30,30,30,0.6); padding: 30px; border-radius: 15px; backdrop-filter: blur(12px); box-shadow: 0 8px 20px rgba(0,0,0,0.4); transition: transform 0.3s ease;">
+                    <h3 style="font-size: 1.6em; margin-bottom: 15px; color: #f39c12; font-weight: 700;">Crafted by Hand</h3>
+                    <p style="font-size: 1.1em; line-height: 1.75; color: #eee;">
+                      We don’t mass-produce. Each piece is a singular work, shaped with fire, steel, and soul — tailored precisely to your vision.
+                    </p>
+                  </div>
+                  <div class="about-card" style="background: rgba(30,30,30,0.6); padding: 30px; border-radius: 15px; backdrop-filter: blur(12px); box-shadow: 0 8px 20px rgba(0,0,0,0.4); transition: transform 0.3s ease;">
+                    <h3 style="font-size: 1.6em; margin-bottom: 15px; color: #f39c12; font-weight: 700;">Global Recognition</h3>
+                    <p style="font-size: 1.1em; line-height: 1.75; color: #eee;">
+                      Our metalworks grace homes and estates across Europe, the Gulf, and North Africa, standing as timeless symbols of form and function.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              
+               <div class="about-numbers">
+                 
+                 <style>
+                 .about-numbers {
+                   display: flex;
+                   justify-content: center;
+                   gap: 60px;
+                   margin-top: 80px;
+                   flex-wrap: wrap;
+                   text-align: center;
+                   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                 }
+                 .about-numbers > div {
+                   background: rgba(230, 126, 34, 0.15);
+                   padding: 25px 40px;
+                   border-radius: 20px;
+                   box-shadow: 0 6px 15px rgba(230, 126, 34, 0.3);
+                   min-width: 140px;
+                   transition: transform 0.3s ease, box-shadow 0.3s ease;
+                   cursor: default;
+                 }
+                 .about-numbers > div:hover {
+                   transform: translateY(-8px);
+                   box-shadow: 0 12px 25px rgba(230, 126, 34, 0.5);
+                 }
+                 .about-numbers h3 {
+                   font-size: 2.8em;
+                   color: #e67e22;
+                   margin-bottom: 8px;
+                   font-weight: 700;
+                   letter-spacing: 1px;
+                 }
+                 .about-numbers p {
+                   font-size: 1.1em;
+                   color: #2c3e50;
+                   font-weight: 600;
+                   margin: 0;
+                 }
+                 @media (max-width: 600px) {
+                   .about-numbers {
+                     flex-direction: column;
+                     gap: 30px;
+                   }
+                   .about-numbers > div {
+                     width: 100%;
+                     max-width: 300px;
+                     margin: auto;
+                   }
+                 }
+                 </style>
+                 
+                 <div class="about-numbers">
+                   <div>
+                     <h3>2,000+</h3>
+                     <p>Custom Ironworks</p>
+                   </div>
+                   <div>
+                     <h3>25+</h3>
+                     <p>Years of Experience</p>
+                   </div>
+                   <div>
+                     <h3>3</h3>
+                     <p>Continents Served</p>
+                   </div>
+                   <div>
+                     <h3>100%</h3>
+                     <p>Hand-Forged Craftsmanship</p>
+                   </div>
+                 </div>
+                 
+                 
+               <script>
+                 document.querySelectorAll('.about-numbers > div').forEach(item => {
+                   item.addEventListener('mouseenter', () => {
+                     item.style.backgroundColor = 'rgba(230, 126, 34, 0.3)';
+                   });
+                   item.addEventListener('mouseleave', () => {
+                     item.style.backgroundColor = 'rgba(230, 126, 34, 0.15)';
+                   });
+                 });
+                 </script>
+               <div style="margin-top: 40px;">
+                 <a href="#contact" class="btn btn-orange">Discover Our Craft</a>
+                 
+               </div>
+            </div>
+            </section>
+          
+           <style>
+   .about-card {
+     background: rgba(255, 255, 255, 0.15); /* Transparenter */
+     padding: 30px;
+     border-radius: 24px; /* Deutlich runder */
+     backdrop-filter: blur(15px); /* etwas stärkerer Blur */
+     transition: transform 0.3s ease;
+     box-shadow: 0 8px 20px rgba(0,0,0,0.1); /* dezenter Schatten für Tiefe */
+   }
+   .about-card:hover {
+     transform: translateY(-8px);
+     box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+   }
+   .highlight-text {
+     background: rgba(0, 0, 0, 0.5); /* transparenter */
+     padding: 40px;
+     margin-top: -40px;
+     max-width: 800px;
+     border-radius: 24px; /* runder */
+     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4); /* mehr Tiefe */
+     backdrop-filter: blur(12px);
+   }
+</style>
+           </style>
+          
+
+          <section id="services" style="padding: 100px 20px; background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); border-radius: 30px; max-width: 1200px; margin: auto; text-align: center; box-shadow: 0 8px 30px rgba(0,0,0,0.3); margin-bottom: 80px;">
+            <h2 style="font-size: 2.6em; color: #fff; text-shadow: 0 1px 3px rgba(0,0,0,0.6); margin-bottom: 60px;">Our Services</h2>
+            <div class="flex-row" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
+              <div class="card" style="background: rgba(255,255,255,0.05); padding: 30px; border-radius: 20px; width: 250px; backdrop-filter: blur(8px); box-shadow: 0 4px 20px rgba(0,0,0,0.25); transition: transform 0.3s;">
+                <img src="https://cdn-icons-png.flaticon.com/512/1076/1076928.png" alt="Custom Metalwork" style="width: 70px; margin-bottom: 20px;">
+                <h3 style="color: #f39c12; font-size: 1.4em; margin-bottom: 10px;">Custom Metalwork</h3>
+                <p style="color: #eee; font-size: 1em; line-height: 1.6;">Tailored iron pieces designed to match your space and vision.</p>
+              </div>
+              <div class="card" style="background: rgba(255,255,255,0.05); padding: 30px; border-radius: 20px; width: 250px; backdrop-filter: blur(8px); box-shadow: 0 4px 20px rgba(0,0,0,0.25); transition: transform 0.3s;">
+                <img src="https://cdn-icons-png.flaticon.com/512/3103/3103434.png" alt="Gates & Doors" style="width: 70px; margin-bottom: 20px;">
+                <h3 style="color: #f39c12; font-size: 1.4em; margin-bottom: 10px;">Gates & Doors</h3>
+                <p style="color: #eee; font-size: 1em; line-height: 1.6;">Secure and stylish entrances handcrafted with care.</p>
+              </div>
+              <div class="card" style="background: rgba(255,255,255,0.05); padding: 30px; border-radius: 20px; width: 250px; backdrop-filter: blur(8px); box-shadow: 0 4px 20px rgba(0,0,0,0.25); transition: transform 0.3s;">
+                <img src="https://cdn-icons-png.flaticon.com/512/447/447031.png" alt="Railings" style="width: 70px; margin-bottom: 20px;">
+                <h3 style="color: #f39c12; font-size: 1.4em; margin-bottom: 10px;">Railings & Balconies</h3>
+                <p style="color: #eee; font-size: 1em; line-height: 1.6;">Elegant ironwork for terraces and staircases.</p>
+              </div>
+              <div class="card" style="background: rgba(255,255,255,0.05); padding: 30px; border-radius: 20px; width: 250px; backdrop-filter: blur(8px); box-shadow: 0 4px 20px rgba(0,0,0,0.25); transition: transform 0.3s;">
+                <img src="https://cdn-icons-png.flaticon.com/512/1995/1995654.png" alt="Decorative Iron" style="width: 70px; margin-bottom: 20px;">
+                <h3 style="color: #f39c12; font-size: 1.4em; margin-bottom: 10px;">Decorative Iron</h3>
+                <p style="color: #eee; font-size: 1em; line-height: 1.6;">Ornamental grilles, fences and art for homes and public spaces.</p>
+              </div>
+            </div>
+          </section>
+          
+          
+
+        <section id="gallery">
+            
+
+<style>
+  .gallery-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding: 40px 0;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(6px);
+    border-radius: 30px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  }
+
+  .gallery-row {
+    display: flex;
+    gap: 20px;
+    animation: scrollGallery 60s linear infinite;
+    width: max-content;
+    padding-left: 100%;
+  }
+
+  .gallery-row img {
+    border-radius: 20px;
+    width: 200px;
+    height: 140px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease;
+  }
+
+  .gallery-row img:hover {
+    transform: scale(1.1);
+  }
+
+  @keyframes scrollGallery {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .gallery-row img {
+      width: 140px;
+      height: 100px;
+    }
+  }
+</style>
+
+<div class="gallery-container">
+    <h2 style="text-align: center; font-size: 2.5em; color: #fff; margin-bottom: 40px;">Gallery</h2>
+  <div class="gallery-row">
+    <img src="py1.jpg" alt="Work sample 1">
+    <img src="py2.jpg" alt="Work sample 2">
+    <img src="py3.jpg" alt="Work sample 3">
+    <img src="py4.jpg" alt="Work sample 4">
+    <img src="py5.jpg" alt="Work sample 5">
+    <img src="py6.jpg" alt="Work sample 6">
+    <img src="py7.jpg" alt="Work sample 7">
+    <img src="py8.jpg" alt="Work sample 8">
+    <img src="py9.jpg" alt="Work sample 9">
+    <img src="py1.jpg" alt="Work sample 1">
+    <img src="py2.jpg" alt="Work sample 2">
+    <img src="py3.jpg" alt="Work sample 3">
+    <img src="py4.jpg" alt="Work sample 4">
+    <img src="py5.jpg" alt="Work sample 5">
+    <img src="py6.jpg" alt="Work sample 6">
+    <img src="py7.jpg" alt="Work sample 7">
+    <img src="py8.jpg" alt="Work sample 8">
+    <img src="py9.jpg" alt="Work sample 9">
+  </div>
+</div>
+
+                
+        </section>
+
+        <section id="contact" style="padding: 60px 20px; background: rgba(255, 255, 255, 0.03); border-radius: 30px; backdrop-filter: blur(8px); box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25); max-width: 800px; margin: auto; color: #fff; text-align: center;">
+            <h2 style="font-size: 2.5em; margin-bottom: 20px;">Contact</h2>
+            <p><strong>Address:</strong> Your Street, Your City, Morocco</p>
+            <p><strong>Phone / WhatsApp:</strong> +212-XXX-XXXXXX</p>
+            <p><strong>Email:</strong> info@feryc.ma</p>
+          
+            <form style="margin-top: 40px; display: flex; flex-direction: column; gap: 20px;">
+              <input type="text" name="name" placeholder="Your Name" required style="padding: 15px; border-radius: 12px; border: none; background: rgba(255, 255, 255, 0.1); color: #fff;">
+              <input type="email" name="email" placeholder="Your Email" required style="padding: 15px; border-radius: 12px; border: none; background: rgba(255, 255, 255, 0.1); color: #fff;">
+              <textarea name="message" rows="5" placeholder="Your Message" required style="padding: 15px; border-radius: 12px; border: none; background: rgba(255, 255, 255, 0.1); color: #fff;"></textarea>
+              <button type="submit" style="padding: 15px; border: none; border-radius: 12px; background: #e67e22; color: #fff; font-size: 1.1em; cursor: pointer;">Send Message</button>
+            </form>
+          </section>
+          
+    </div>
+
+    <footer>
+        <p>&copy; 2025 FER Y.C. – All rights reserved.</p>
+    </footer>
+</body>
+</html>
