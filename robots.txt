@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://feryc.github.io/sitemap.xml
